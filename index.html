@@ -124,6 +124,11 @@
             background-color: none !important;
             color: rgb(255, 255, 255);
         }
+        #button{
+        text-align: center;
+    padding: 8px 20px; /* Small Size Button */
+
+        }
         #button:hover{
             color:#ff8C00;
             background-color: white;
@@ -132,11 +137,7 @@
             text-align: justify;
         }
 
-        hr {
-            width: 100%;
-            border: 1px solid black;
-            text-align: left;
-        }
+       
     </style>
 </head>
 
@@ -167,16 +168,19 @@
     <div class="container-fluid mt-5 pt-5 pb-5" style="background-color: #f5f5f5;">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6">
-                    <h2 style="color: #ff8C00;">About</h2>
+                <div class="d-none d-md-block col-md-5">
+                    <hr>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-2">
+                    <h2 class=" text-sm-start text-md-center " style="color: #ff8C00;">About</h2>
+                </div>
+                <div class="d-none d-md-block col-md-5">
                     <hr>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <p>Established in 1953, Nankana Sahib Education Trust (NSET) was founded with the noble mission of
+                    <p class="mt-md-3">Established in 1953, Nankana Sahib Education Trust (NSET) was founded with the noble mission of
                         uplifting rural communities through quality education. Guided by the vision of <strong>"Removal
                         of Economic Backwardness through Technology"</strong> the trust has been instrumental in
                         providing education to thousands of students, especially from rural backgrounds. With 18
@@ -189,12 +193,23 @@
                         leaders by providing equal opportunities to students from underprivileged backgrounds. legacof
                         70+ years, NSET stands as a beacon of knowledge, discipline, and empowerment, transforming
                         countless lives and making a impact osociety.</p>
+                </div>
+            </div>
+            <div class="row mt-md-4">
+                <div class="col-md-5">
+                </div>
+                <div class="col-md-2">
                     <a href="" class="btn" id="button">Read More <i class="fa-solid fa-angles-right fa-sm"></i></a>
+                </div>
+                <div class="col-md-5">
+
                 </div>
             </div>
         </div>
     </div>
     </div>
+
+    <!--our institutions-->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

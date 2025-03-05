@@ -18,20 +18,50 @@
         }
 
         .hero-overlay {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0, 30px;
+            text-align: center;
             width: 100%;
             height: 100%;
-            background-color: rgb(0, 0, 0, 0.6);
-
-
+            background-color: rgba(0, 0, 0, 0.6);
+            overflow: hidden;
         }
 
         .hero-heading {
             color: white;
             overflow: hidden;
             white-space: nowrap;
-            animation: typing 4s steps(20, end) forwards;
+            text-shadow: 1px 2px 2px rgb(12, 11, 11);
+            font-size: 30px;
+            animation: typing 4s steps(30, end) forwards;
             width: 0;
+            color: #ff8C00;
+
         }
+
+        @media (max-width: 990px) {
+            .hero-overlay {
+                padding: 0 10px;
+            }
+
+            .hero-heading {
+                white-space: nowrap;
+                animation: typing 4s steps(40, end) forwards;
+                font-size: 19px;
+                width: 100%;
+            }
+            .subheading {
+                font-size: 16px !important;
+            }
+
+            .desc {
+                font-size: 13px !important;
+                text-align: justify;
+            }
+        }
+
 
         @keyframes typing {
             from {
@@ -48,8 +78,10 @@
             animation: fade ease-in;
             animation-duration: 4s;
             opacity: 1;
-        }
+            text-shadow: 1px 2px 2px rgb(0, 0, 0);
+            font-size: 20px;
 
+        }
         @keyframes fade {
             from {
                 opacity: 0;
@@ -63,6 +95,7 @@
         .desc {
             animation: fadezoom 4s ease-out forwards;
             opacity: 1;
+            font-size: 17px;
             transform: scale(1);
             color: white;
         }
@@ -78,12 +111,31 @@
                 transform: scale(1);
             }
         }
-
+        .btn{
+            background-color: #ff8C00;
+            border: #ff8C00;
+            color: white;
+            font-size: 17px;
+            font-weight: 500;
+            margin: 0px 12px 0px 0px;
+        }
+        .btn:hover{
+            border: 1px solid #ff8C00;
+            background-color: none !important;
+            color: rgb(255, 255, 255);
+        }
+        #button:hover{
+            color:#ff8C00;
+            background-color: white;
+        }
         p {
             text-align: justify;
         }
-        hr{
+
+        hr {
             width: 100%;
+            border: 1px solid black;
+            text-align: left;
         }
     </style>
 </head>
@@ -92,18 +144,18 @@
     <!--hero section-->
     <div class="hero-section m-auto">
         <div class="hero-overlay">
-            <div class="container text-start" style="padding-top: 150px;">
+            <div class="container d-flex align-items-center justify-content-cente text-start">
                 <div class="row">
-                    <div class="col">
+                    <div class=" col-12 col-md-8">
                         <h1 class="hero-heading">Welcome to Nankana Sahib Education Trust (NSET)</h1>
                         <h2 class="subheading">Empowering Rural India through Education Since 1953</h2>
                         <p class="desc">Nankana Sahib Education Trust (NSET) is a pioneering educational institution
                             dedicated to uplifting rural communities through quality educationsince 1953. With a legacy
                             of excellence, NSET manages 18 Institutions including Engineering Colleges, Polytechnics,
-                            Schools, and Community DevelopmentPrograms — fostering knowledge, innovation, and social
+                            Schools, and Community DevelopmentPrograms fostering knowledge, innovation, and social
                             empowerment.</p>
-                        <p><a href="" class="btn btn-primary">Know More</a>
-                            <a href="" class="btn btn-primary">Our Institutions</a>
+                        <p><a href="" class="btn">Know More</a>
+                            <a href="" class="btn">Our Institutions</a>
                         </p>
                     </div>
                 </div>
@@ -116,7 +168,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <h2>About</h2>
+                    <h2 style="color: #ff8C00;">About</h2>
                 </div>
                 <div class="col-12 col-md-6">
                     <hr>
@@ -126,10 +178,10 @@
                 <div class="col">
                     <p>Established in 1953, Nankana Sahib Education Trust (NSET) was founded with the noble mission of
                         uplifting rural communities through quality education. Guided by the vision of <strong>"Removal
-                            of Economic Backwardness through Technology"</strong> the trust has been instrumental in
+                        of Economic Backwardness through Technology"</strong> the trust has been instrumental in
                         providing education to thousands of students, especially from rural backgrounds. With 18
                         Educational Institutions under its umbrella, including <strong>Nanak Dev Engineering College,
-                            Guru Nanak Dev Polytechnic, and Nankana Sahib Public School, NSET </strong> continues to
+                        Guru Nanak Dev Polytechnic, and Nankana Sahib Public School, NSET </strong> continues to
                         empower young minds by offering a blend of academic excellence, innovation, and social
                         values.<br>
                         Over the years, NSET has made remarkable contributions to society by promoting quality
@@ -137,7 +189,7 @@
                         leaders by providing equal opportunities to students from underprivileged backgrounds. legacof
                         70+ years, NSET stands as a beacon of knowledge, discipline, and empowerment, transforming
                         countless lives and making a impact osociety.</p>
-                    <a href="" class="btn btn-primary">Read More</a>
+                    <a href="" class="btn" id="button">Read More <i class="fa-solid fa-angles-right fa-sm"></i></a>
                 </div>
             </div>
         </div>

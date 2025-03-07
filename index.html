@@ -10,6 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+        <script src="counter.js"></script>
 
     <style>
         body {
@@ -140,21 +141,52 @@
 
         .card {
             border: 1px solid #fed6a4 !important;
-        }
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);        }
 
         .card:hover {
-            transform: scale(1);
+            transform: translateY(5px);
             box-shadow: 0px 2px 5px #fed6a4;
             transition: ease-in-out 1s;
         }
+
         @media (max-width:770px) {
-            h2{
+            h2 {
                 padding-bottom: 8px;
                 border-bottom: 1px solid #dedddc;
             }
         }
+
         .icon-square {
             background-color: #ffe5c6;
+        }
+
+        /* achievement */
+        .container-fluid{
+            padding-right: 0 !important;
+        }
+        .counter-box {
+            padding: 20px;
+            background: #fff;
+            border: 2px solid #fed6a4;
+            border-radius: 10px;
+            transition: 0.3s;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .counter-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 10px #fed6a4;
+        }
+
+        .counter {
+            font-size: 40px;
+            font-weight: 700;
+            margin: 10px 0;
+            /* Golden Color */
+        }
+
+        .text-orange {
+            color: #ff8C00;
         }
     </style>
 </head>
@@ -218,7 +250,7 @@
                 </div>
             </div>
             <div class="row mt-md-4">
-                <div class="col-3 col-md-5"  >
+                <div class="col-3 col-md-5">
                 </div>
                 <div class="col-6 col-md-3">
                     <a href="" class="btn" id="button">Read More <i class="fa-solid fa-angles-right fa-sm"></i></a>
@@ -317,9 +349,13 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h5 class="card-title">Community Development & Training Centre</h5>
-                                    <p class="card-text">Started in 1999, the Community Development & Training Centre aims
-                                        to uplift the weaker sections of society. It offers Vocational Training Programs in
-                                        areas like Stitching, Tailoring, and Computer Applications. The centre empowers Women and Youth by providing Skill Development Courses. It serves as a platform to
+                                    <p class="card-text">Started in 1999, the Community Development & Training Centre
+                                        aims
+                                        to uplift the weaker sections of society. It offers Vocational Training Programs
+                                        in
+                                        areas like Stitching, Tailoring, and Computer Applications. The centre empowers
+                                        Women and Youth by providing Skill Development Courses. It serves as a platform
+                                        to
                                         enhance Employability and Economic Independence among rural communities.</p>
                                 </div>
                             </div>
@@ -328,8 +364,12 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h5 class="card-title">Science & Technology Entrepreneur’s Park (STEP)</h5>
-                                    <p class="card-text">STEP was established to foster Entrepreneurship, Innovation, and Research Projects. It provides Technical Infrastructure and Business Incubation to
-                                        budding entrepreneurs. The park encourages Startups in Technology and Agriculture sectors. STEP plays a pivotal role in promoting Innovation and Self-Employment among
+                                    <p class="card-text">STEP was established to foster Entrepreneurship, Innovation,
+                                        and Research Projects. It provides Technical Infrastructure and Business
+                                        Incubation to
+                                        budding entrepreneurs. The park encourages Startups in Technology and
+                                        Agriculture sectors. STEP plays a pivotal role in promoting Innovation and
+                                        Self-Employment among
                                         students and the rural population.</p>
                                 </div>
                             </div>
@@ -337,7 +377,7 @@
                     </div>
                 </div>
                 <div class="row mt-4">
-                    <div class="col-3 col-md-5"  >
+                    <div class="col-3 col-md-5">
                     </div>
                     <div class="col-6 col-md-3">
                         <a href="" class="btn" id="button">Read More <i class="fa-solid fa-angles-right fa-sm"></i></a>
@@ -352,13 +392,13 @@
         <div class="container-fluid">
             <div class="container px-4 py-5" id="hanging-icons" style="margin-top: 80px;">
                 <div class="row ">
-                    <div class="d-none d-md-block col-md-3">
+                    <div class="d-none d-md-block col-md-4">
                         <hr>
                     </div>
-                    <div class="col-12 col-md-6">
-                        <h2 class="text-sm-start text-md-center" style="color: #ff8C00;">Why Choose NSET?</h2>
+                    <div class="col-12 col-md-4">
+                        <h2 class="text-sm-start text-md-center" style="color: #ff8C00;">Why NSET?</h2>
                     </div>
-                    <div class="d-none d-md-block col-md-3">
+                    <div class="d-none d-md-block col-md-4">
                         <hr>
                     </div>
                 </div>
@@ -395,6 +435,63 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!--Achievement Section-->
+        <div class="container-fluid">
+            <section class="counter-section pt-5 pb-5" style="background-color: #f5f5f5;">
+                <div class="container">
+                    <div class="row ">
+                        <div class="d-none d-md-block col-md-4">
+                            <hr>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <h2 class=" text-sm-start text-md-center" style="color: #ff8C00;">Our Achievements</h2>
+                        </div>
+                        <div class="d-none d-md-block col-md-4">
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row text-center mt-5">
+                        <!-- Counter 1 -->
+                        <div class="col-md-3 col-6 mb-4">
+                            <div class="counter-box">
+                                <i class="fa fa-graduation-cap fa-3x text-orange"></i>
+                                <h2 class="counter" data-count="10000">0</h2>
+                                <p class="text-center">Engineers Graduated</p>
+                            </div>
+                        </div>
+
+                        <!-- Counter 2 -->
+                        <div class="col-md-3 col-6 mb-4">
+                            <div class="counter-box">
+                                <i class="fa fa-building fa-3x text-orange"></i>
+                                <h2 class="counter" data-count="18">0</h2>
+                                <p class="text-center">Institutions Under NSET</p>
+                            </div>
+                        </div>
+
+                        <!-- Counter 3 -->
+                        <div class="col-md-3 col-6 mb-4">
+                            <div class="counter-box">
+                                <i class="fa fa-briefcase fa-3x text-orange"></i>
+                                <h2 class="counter" data-count="3000">0</h2>
+                                <p class="text-center">Post Graduates</p>
+                            </div>
+                        </div>
+
+                        <!-- Counter 4 -->
+                        <div class="col-md-3 col-6 mb-4">
+                            <div class="counter-box">
+                                <i class="fa fa-trophy fa-3x text-orange"></i>
+                                <h2 class="counter" data-count="100">0</h2>
+                                <p class="text-center">Awards & Recognitions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </div>
 
         <div id="footersec"></div>

@@ -139,13 +139,22 @@
         }
 
         .card {
-            border: 1px solid #fed6a4;
+            border: 1px solid #fed6a4 !important;
         }
 
         .card:hover {
             transform: scale(1);
-            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 2px 5px #fed6a4;
             transition: ease-in-out 1s;
+        }
+        @media (max-width:770px) {
+            h2{
+                padding-bottom: 8px;
+                border-bottom: 1px solid #dedddc;
+            }
+        }
+        .icon-square {
+            background-color: #ffe5c6;
         }
     </style>
 </head>
@@ -184,7 +193,7 @@
                     <hr>
                 </div>
                 <div class="col-12 col-md-2">
-                    <h2 class=" text-sm-start text-md-center " style="color: #ff8C00;">About</h2>
+                    <h2 class=" text-sm-start text-md-center" style="color: #ff8C00;">About</h2>
                 </div>
                 <div class="d-none d-md-block col-md-5">
                     <hr>
@@ -192,7 +201,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <p class="mt-md-3">Established in 1953, Nankana Sahib Education Trust (NSET) was founded with the
+                    <p class="mt-3">Established in 1953, Nankana Sahib Education Trust (NSET) was founded with the
                         noble mission of
                         uplifting rural communities through quality education. Guided by the vision of <strong>"Removal
                             of Economic Backwardness through Technology"</strong> the trust has been instrumental in
@@ -209,12 +218,12 @@
                 </div>
             </div>
             <div class="row mt-md-4">
-                <div class="col-md-5">
+                <div class="col-3 col-md-5"  >
                 </div>
-                <div class="col-md-2">
+                <div class="col-6 col-md-3">
                     <a href="" class="btn" id="button">Read More <i class="fa-solid fa-angles-right fa-sm"></i></a>
                 </div>
-                <div class="col-md-5">
+                <div class="col-3 col-md-4">
 
                 </div>
             </div>
@@ -308,13 +317,9 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h5 class="card-title">Community Development & Training Centre</h5>
-                                    <p class="card-text">Started in 1999, the Community Development & Training Centre
-                                        aims
-                                        to uplift the weaker sections of society. It offers Vocational Training Programs
-                                        in
-                                        areas like Stitching, Tailoring, and Computer Applications. The centre empowers
-                                        Women and Youth by providing Skill Development Courses. It serves as a platform
-                                        to
+                                    <p class="card-text">Started in 1999, the Community Development & Training Centre aims
+                                        to uplift the weaker sections of society. It offers Vocational Training Programs in
+                                        areas like Stitching, Tailoring, and Computer Applications. The centre empowers Women and Youth by providing Skill Development Courses. It serves as a platform to
                                         enhance Employability and Economic Independence among rural communities.</p>
                                 </div>
                             </div>
@@ -323,27 +328,21 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h5 class="card-title">Science & Technology Entrepreneur’s Park (STEP)</h5>
-                                    <p class="card-text">STEP was established to foster Entrepreneurship, Innovation,
-                                        and
-                                        Research Projects. It provides Technical Infrastructure and Business Incubation
-                                        to
-                                        budding entrepreneurs. The park encourages Startups in Technology and
-                                        Agriculture
-                                        sectors. STEP plays a pivotal role in promoting Innovation and Self-Employment
-                                        among
+                                    <p class="card-text">STEP was established to foster Entrepreneurship, Innovation, and Research Projects. It provides Technical Infrastructure and Business Incubation to
+                                        budding entrepreneurs. The park encourages Startups in Technology and Agriculture sectors. STEP plays a pivotal role in promoting Innovation and Self-Employment among
                                         students and the rural population.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row mt-md-4">
-                    <div class="col-md-5">
+                <div class="row mt-4">
+                    <div class="col-3 col-md-5"  >
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-6 col-md-3">
                         <a href="" class="btn" id="button">Read More <i class="fa-solid fa-angles-right fa-sm"></i></a>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-3 col-md-4">
 
                     </div>
                 </div>
@@ -352,11 +351,21 @@
         <!--Features-->
         <div class="container-fluid">
             <div class="container px-4 py-5" id="hanging-icons" style="margin-top: 80px;">
-                <h2 class="pb-2 border-bottom" style="color: #ff8C00;">Why Choose NSET?</h2>
+                <div class="row ">
+                    <div class="d-none d-md-block col-md-3">
+                        <hr>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h2 class="text-sm-start text-md-center" style="color: #ff8C00;">Why Choose NSET?</h2>
+                    </div>
+                    <div class="d-none d-md-block col-md-3">
+                        <hr>
+                    </div>
+                </div>
                 <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
                     <div class="col d-flex align-items-start">
                         <div
-                            class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 p-4 rounded">
+                            class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 p-4 rounded">
                             <i class="fa-solid fa-graduation-cap fa-lg" style="color: #ff8c00;"></i>
                         </div>
                         <div>
@@ -366,7 +375,7 @@
                     </div>
                     <div class="col d-flex align-items-start">
                         <div
-                            class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 p-4 rounded">
+                            class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 p-4 rounded">
                             <i class="fa-solid fa-briefcase fa-lg" style="color: #ff8c00;"></i>
                         </div>
                         <div>
@@ -376,7 +385,7 @@
                     </div>
                     <div class="col d-flex align-items-start">
                         <div
-                            class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 p-4 rounded">
+                            class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 p-4 rounded">
                             <i class="fa-solid fa-building fa-lg" style="color: #ff8c00;"></i>
                         </div>
                         <div>

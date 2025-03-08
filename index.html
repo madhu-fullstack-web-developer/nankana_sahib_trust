@@ -204,7 +204,7 @@
     <div id="headersec"></div>
 
     <!--hero section-->
-    <div class="hero-section m-auto">
+    <div class="hero-section m-auto" id="herosection">
         <div class="hero-overlay">
             <div class="container d-flex align-items-center justify-content-cente text-start">
                 <div class="row">
@@ -578,7 +578,7 @@
         </div>
         <!--footer part-->
         <div id="footersec"></div>
-        
+
         <!--script part -->
         <script>
             // Function to Load Header
@@ -594,7 +594,10 @@
                 .then(data => {
                     document.getElementById("footersec").innerHTML = data;
                 });
-
+                
+            if (window.location.pathname === "/") {
+                window.location.href = "index.html";
+            }
         </script>
         <script src="https://kit.fontawesome.com/d51b33a391.js" crossorigin="anonymous"></script>
 </body>

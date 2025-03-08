@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nankana Sahib Education Trust</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="counter.js"></script>
+
+    <style>
+        body {
+            font-size: 17px;
+        }
+
+        .hero-section {
+            width: 100%;
+            background-image: url(img/nankana_sahib_education_trust_nankana\ sahib\ public\ school.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+
+        .hero-overlay {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0, 30px;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            overflow: hidden;
+        }
+
+        .hero-heading {
+            color: white;
+            overflow: hidden;
+            white-space: nowrap;
+            text-shadow: 1px 2px 2px rgb(12, 11, 11);
+            font-size: 30px;
+            animation: typing 4s steps(30, end) forwards;
+            width: 0;
+            color: #ff8C00;
+
+        }
+
+        @media (max-width: 990px) {
+            .hero-overlay {
+                padding: 0 10px;
+            }
+
+            .hero-heading {
+                white-space: nowrap;
+                animation: typing 4s steps(40, end) forwards;
+                font-size: 19px;
+                width: 100%;
+            }
+
+            .subheading {
+                font-size: 16px !important;
+            }
+
+            .desc {
+                font-size: 13px !important;
+                text-align: justify;
+            }
+        }
+
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%
+            }
+        }
+
+        .subheading {
+            color: white;
+            animation: fade ease-in;
+            animation-duration: 4s;
+            opacity: 1;
+            text-shadow: 1px 2px 2px rgb(0, 0, 0);
+            font-size: 20px;
+
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .desc {
+            animation: fadezoom 4s ease-out forwards;
+            opacity: 1;
+            font-size: 17px;
+            transform: scale(1);
+            color: white;
+        }
+
+        @keyframes fadezoom {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        #button {
+            text-align: center;
+            padding: 8px 20px;
+            /* Small Size Button */
+
+        }
+
+        #button:hover {
+            color: #ff8C00;
+            background-color: white;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .card {
+            border: 1px solid #fed6a4 !important;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .card:hover {
+            transform: translateY(5px);
+            box-shadow: 0px 2px 5px #fed6a4;
+            transition: ease-in-out 1s;
+        }
+
+        @media (max-width:770px) {
+            h2 {
+                padding-bottom: 8px;
+                border-bottom: 1px solid #dedddc;
+            }
+        }
+
+        .icon-square {
+            background-color: #ffe5c6;
+        }
+
+        /* achievement */
+        .container-fluid {
+            padding-right: 0 !important;
+        }
+
+        .counter-box {
+            padding: 20px;
+            background: #fff;
+            border: 2px solid #fed6a4;
+            border-radius: 10px;
+            transition: 0.3s;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .counter-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 10px #fed6a4;
+        }
+
+        .counter {
+            font-size: 40px;
+            font-weight: 700;
+            margin: 10px 0;
+            /* Golden Color */
+        }
+
+        .text-orange {
+            color: #ff8C00;
+        }
+       .carousel-control-prev-icon, .carousel-control-next-icon {
+        filter: invert(41%);            
+              
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="headersec"></div>
+
+    <!--hero section-->
+    <div class="hero-section m-auto">
+        <div class="hero-overlay">
+            <div class="container d-flex align-items-center justify-content-cente text-start">
+                <div class="row">
+                    <div class=" col-12 col-md-8">
+                        <h1 class="hero-heading">Welcome to Nankana Sahib Education Trust (NSET)</h1>
+                        <h2 class="subheading">Empowering Rural India through Education Since 1953</h2>
+                        <p class="desc">Nankana Sahib Education Trust (NSET) is a pioneering educational institution
+                            dedicated to uplifting rural communities through quality educationsince 1953. With a legacy
+                            of excellence, NSET manages 18 Institutions including Engineering Colleges, Polytechnics,
+                            Schools, and Community DevelopmentPrograms fostering knowledge, innovation, and social
+                            empowerment.</p>
+                        <p><a href="" class="btn">Know More</a>
+                            <a href="" class="btn">Our Institutions</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--about section-->
+    <div class="container-fluid pt-5 pb-5" style="background-color: #f5f5f5; margin-top: 80px;">
+        <div class="container">
+            <div class="row ">
+                <div class="d-none d-md-block col-md-5">
+                    <hr>
+                </div>
+                <div class="col-12 col-md-2">
+                    <h2 class=" text-sm-start text-md-center" style="color: #ff8C00;">About</h2>
+                </div>
+                <div class="d-none d-md-block col-md-5">
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="mt-3">Established in 1953, Nankana Sahib Education Trust (NSET) was founded with the
+                        noble mission of
+                        uplifting rural communities through quality education. Guided by the vision of <strong>"Removal
+                            of Economic Backwardness through Technology"</strong> the trust has been instrumental in
+                        providing education to thousands of students, especially from rural backgrounds. With 18
+                        Educational Institutions under its umbrella, including <strong>Nanak Dev Engineering College,
+                            Guru Nanak Dev Polytechnic, and Nankana Sahib Public School, NSET </strong> continues to
+                        empower young minds by offering a blend of academic excellence, innovation, and social
+                        values.<br>
+                        Over the years, NSET has made remarkable contributions to society by promoting quality
+                        education, research, and skill development pr Thtrust remains committed to shaping future
+                        leaders by providing equal opportunities to students from underprivileged backgrounds. legacof
+                        70+ years, NSET stands as a beacon of knowledge, discipline, and empowerment, transforming
+                        countless lives and making a impact osociety.</p>
+                </div>
+            </div>
+            <div class="row mt-md-4">
+                <div class="col-3 col-md-5">
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="" class="btn" id="button">Read More <i class="fa-solid fa-angles-right fa-sm"></i></a>
+                </div>
+                <div class="col-3 col-md-4">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--our institutions-->
+    <div class="container-fluid">
+        <div class="container" style="margin-top: 80px;">
+            <div class="row">
+                <div class="d-none d-md-block col-md-4">
+                    <hr>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h2 class=" text-sm-start text-md-center " style="color: #ff8C00;">Our Institutions</h2>
+                </div>
+                <div class="d-none d-md-block col-md-4">
+                    <hr>
+                </div>
+                <div class="cont gap-3 mt-sm-3 mt-md-5">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                        <div class="col">
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Guru Nanak Dev Engineering College(GNDEC)</h5>
+                                    <p class="card-text">Established in 1956, GNDEC is one of the oldest and prestigious
+                                        engineering colleges in Northern India. The institution is ISO Certified, NBA
+                                        Accredited, and conferred Autonomous Status by UGC. With a legacy of producing
+                                        10,000+ Engineers, GNDEC plays a key role in Technical Education and Research.
+                                        It
+                                        has received grants from TEQIP-II, DST, and AICTE for various research projects.
+                                        The
+                                        college collaborates with IOWA University USA and promotes Innovation and
+                                        Entrepreneurship among students.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Guru Nanak Dev Polytechnic</h5>
+                                    <p class="card-text">Founded in 1953, this Polytechnic Institute is the First
+                                        Institution under NSET. It offers Diploma Courses in Engineering and focuses on
+                                        Skill Development and Practical Learning for rural youth. The institute provides
+                                        courses in Civil, Electrical, and Mechanical Engineering. It has well-equipped
+                                        workshops and laboratories to promote hands-on training. The Polytechnic plays a
+                                        vital role in empowering rural students with technical skills. The institute
+                                        conducts Industrial Training Programs to bridge the gap between education and
+                                        industry needs.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nankana Sahib Public School</h5>
+                                    <p class="card-text">Established in 1978, Nankana Sahib Public School provides
+                                        Quality
+                                        Education on the Public School Pattern. Spread across 15 acres of land, the
+                                        school
+                                        caters to 60 villages around Ludhiana. It follows the CBSE Curriculum and
+                                        promotes
+                                        Holistic Development of students. The school organizes Cultural, Sports, and
+                                        Community Programs to enhance student participation. With a team of highly
+                                        qualified
+                                        teachers, the school empowers students to excel in academics and co-curricular
+                                        activities.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Training College Kot Gangu Rai</h5>
+                                    <p class="card-text">Training College Kot Gangu Rai provides Teacher Education
+                                        Programs
+                                        to produce highly skilled educators. The college offers Diploma and Degree
+                                        Courses
+                                        in Education to uplift the rural society. It promotes Women Empowerment by
+                                        enrolling
+                                        female candidates in large numbers. The college organizes Workshops, Seminars,
+                                        and
+                                        Community Outreach Programs. It plays a key role in strengthening the
+                                        educational
+                                        infrastructure in rural areas.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Community Development & Training Centre</h5>
+                                    <p class="card-text">Started in 1999, the Community Development & Training Centre
+                                        aims
+                                        to uplift the weaker sections of society. It offers Vocational Training Programs
+                                        in
+                                        areas like Stitching, Tailoring, and Computer Applications. The centre empowers
+                                        Women and Youth by providing Skill Development Courses. It serves as a platform
+                                        to
+                                        enhance Employability and Economic Independence among rural communities.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Science & Technology Entrepreneur’s Park (STEP)</h5>
+                                    <p class="card-text">STEP was established to foster Entrepreneurship, Innovation,
+                                        and Research Projects. It provides Technical Infrastructure and Business
+                                        Incubation to
+                                        budding entrepreneurs. The park encourages Startups in Technology and
+                                        Agriculture sectors. STEP plays a pivotal role in promoting Innovation and
+                                        Self-Employment among
+                                        students and the rural population.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-3 col-md-5">
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a href="" class="btn" id="button">Read More <i class="fa-solid fa-angles-right fa-sm"></i></a>
+                    </div>
+                    <div class="col-3 col-md-4">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Features-->
+        <div class="container-fluid">
+            <div class="container px-4 py-5" id="hanging-icons" style="margin-top: 80px;">
+                <div class="row ">
+                    <div class="d-none d-md-block col-md-4">
+                        <hr>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <h2 class="text-sm-start text-md-center" style="color: #ff8C00;">Why NSET?</h2>
+                    </div>
+                    <div class="d-none d-md-block col-md-4">
+                        <hr>
+                    </div>
+                </div>
+                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                    <div class="col d-flex align-items-start">
+                        <div
+                            class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 p-4 rounded">
+                            <i class="fa-solid fa-graduation-cap fa-lg" style="color: #ff8c00;"></i>
+                        </div>
+                        <div>
+                            <h3 class="fs-4 text-body-emphasis">Quality Education</h3>
+                            <p>Providing Value-Based Education with Academic Excellence across all Institutions. </p>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <div
+                            class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 p-4 rounded">
+                            <i class="fa-solid fa-briefcase fa-lg" style="color: #ff8c00;"></i>
+                        </div>
+                        <div>
+                            <h3 class="fs-4 text-body-emphasis">Excellent Placements</h3>
+                            <p>Proven Track Record of Placement in Top MNCs & Government Organizations.</p>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <div
+                            class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 p-4 rounded">
+                            <i class="fa-solid fa-building fa-lg" style="color: #ff8c00;"></i>
+                        </div>
+                        <div>
+                            <h3 class="fs-4 text-body-emphasis">Modern Infrastructure</h3>
+                            <p>Advanced Labs, Digital Classrooms, Libraries & Sports Facilities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Achievement Section-->
+        <div class="container-fluid">
+            <section class="counter-section pt-5 pb-5" style="background-color: #f5f5f5;">
+                <div class="container">
+                    <div class="row ">
+                        <div class="d-none d-md-block col-md-4">
+                            <hr>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <h2 class=" text-sm-start text-md-center" style="color: #ff8C00;">Our Achievements</h2>
+                        </div>
+                        <div class="d-none d-md-block col-md-4">
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row text-center mt-5">
+                        <!-- Counter 1 -->
+                        <div class="col-md-3 col-6 mb-4">
+                            <div class="counter-box">
+                                <i class="fa fa-graduation-cap fa-3x text-orange"></i>
+                                <h2 class="counter" data-count="10000">0</h2>
+                                <p class="text-center">Engineers Graduated</p>
+                            </div>
+                        </div>
+
+                        <!-- Counter 2 -->
+                        <div class="col-md-3 col-6 mb-4">
+                            <div class="counter-box">
+                                <i class="fa fa-building fa-3x text-orange"></i>
+                                <h2 class="counter" data-count="18">0</h2>
+                                <p class="text-center">Institutions Under NSET</p>
+                            </div>
+                        </div>
+
+                        <!-- Counter 3 -->
+                        <div class="col-md-3 col-6 mb-4">
+                            <div class="counter-box">
+                                <i class="fa fa-briefcase fa-3x text-orange"></i>
+                                <h2 class="counter" data-count="3000">0</h2>
+                                <p class="text-center">Post Graduates</p>
+                            </div>
+                        </div>
+
+                        <!-- Counter 4 -->
+                        <div class="col-md-3 col-6 mb-4">
+                            <div class="counter-box">
+                                <i class="fa fa-trophy fa-3x text-orange"></i>
+                                <h2 class="counter" data-count="100">0</h2>
+                                <p class="text-center">Awards & Recognitions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <!--testimonials-->
+        <div class="container-fluid" style="margin-top: 80px;">
+            <div class="container">
+                <div class="row ">
+                    <div class="d-none d-md-block col-md-4">
+                        <hr>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <h2 class=" text-sm-start text-md-center" style="color: #ff8C00;">What Our Students Say</h2>
+                    </div>
+                    <div class="d-none d-md-block col-md-4">
+                        <hr>
+                    </div>
+                </div>
+                <div class="row text-center mt-4">
+                    <div class="col-12">
+                        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="10000">
+                                    <p class="lead italic mx-4 mx-md-5 text-center mb-5">"NSET has transformed my life. The quality education and supportive faculty
+                                        helped me build a strong career in the IT field. I am proud to be a part of this
+                                        institution."
+                                    </p>
+                                    <img src="img/harpreet kaur.jpeg" class="rounded-circle img-fluid shadow-1-strong" alt="..." width="100">
+                                    <p class="text-muted text-center mt-2">Harpreet Kaur</p>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <p class="lead italic mx-4 mx-md-5 text-center mb-5">"The hands-on practical training and placement support at GNDP helped me secure a
+                                        job at a reputed company. Thank you NSET for shaping my future!"</p>
+                                    <img src="img/arjun singh.jpeg" class="rounded-circle img-fluid shadow-1-strong" alt="..." width="100">
+                                    <p class="text-muted text-center mt-2">Arjun Singh</p>
+                                </div>
+                                <div class="carousel-item">
+                                   <p class="lead italic mx-4 mx-md-5 text-center mb-5">"The school environment and faculty always encourage us to
+                                    dream big. The education I received at NSPS made me confident to pursue higher
+                                    studies."</p>
+                                    <img src="img/simranjeet kaur.jpeg" class="rounded-circle img-fluid shadow-1-strong" alt="..." width="100">
+                                    <p class="text-muted text-center mt-2">Simranjeet Kaur</p>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleInterval" data-bs-slide="prev" >
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footersec"></div>
+
+        <script>
+            // Function to Load Header
+            fetch("header.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("headersec").innerHTML = data;
+                });
+
+            // Function to Load Footer
+            fetch("footer.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("footersec").innerHTML = data;
+                });
+
+        </script>
+
+
+        <script src="https://kit.fontawesome.com/d51b33a391.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

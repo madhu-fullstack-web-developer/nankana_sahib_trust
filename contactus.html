@@ -6,46 +6,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nankana Sahib Education Trust</title>
 </head>
+<style>
+    #button:hover {
+        color: #ff8C00 !important;
+    }
+</style>
 
 <body>
     <!--header part-->
     <div id="headersec"></div>
     <!--footer part-->
-    <div class="conatiner-fluid">
+    <div class="conatiner-fluid" style="margin-top: 50px;">
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <h3>Get in Touch with Nankana Sahib Education Trust"</h3>
+                <div class="col text-center">
+                    <h4>Get in Touch with Nankana Sahib Education Trust</h4>
+                    <p>We welcome your queries, feedback, and collaborations. Reach out to us for <br>admissions,
+                        partnerships, or any general information.</p>
                 </div>
             </div>
         </div>
     </div>
+    <div class="container-fluid" style="margin-top: 50px;">
+        <div class="container bg-light" style="padding: 50px;">
+            <div class="row gx-5">
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label for="fname" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="fname" value="Johan" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label for="lname" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lname2" value="Doe" required>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="validationDefault02" class="form-label">Phone Number</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="+91 45667-99789"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <select class="form-select" ria-label="Default select example">
+                                <option value="">Subject</option>
+                                <option value="1">Admissions</option>
+                                <option value="2">Patnerships</option>
+                                <option value="3">Career</option>
+                                <option value="3">General Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <button type="submit" id="button" class="btn">Submit</button>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3424.9579201008987!2d75.85811997542379!3d30.859853124523188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sNankana%20Sahib%20Education%20Trust%2C%20Guru%20Nanak%20Dev%20Engineering%20College%20Campus%2C%20Ludhiana%2C%20Punjab%2C%20India.!5e0!3m2!1sen!2sin!4v1741459016797!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
 
 
+        <div id="footersec"></div>
+        <!--script part -->
+        <script>
+            // Function to Load Header
+            fetch("header.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("headersec").innerHTML = data;
+                });
 
+            // Function to Load Footer
+            fetch("footer.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("footersec").innerHTML = data;
+                });
 
-    <div id="footersec"></div>
-    <!--script part -->
-    <script>
-        // Function to Load Header
-        fetch("header.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("headersec").innerHTML = data;
-            });
-
-        // Function to Load Footer
-        fetch("footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("footersec").innerHTML = data;
-            });
-
-    </script>
-    <script src="https://kit.fontawesome.com/d51b33a391.js" crossorigin="anonymous"></script>
+        </script>
+        <script src="https://kit.fontawesome.com/d51b33a391.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

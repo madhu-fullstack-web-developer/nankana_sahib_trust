@@ -129,10 +129,8 @@
             /* Small Size Button */
 
         }
-
         #button:hover {
-            color: #ff8C00;
-            background-color: white;
+            color: #ff8C00 !important;
         }
 
         p {
@@ -594,7 +592,7 @@
                 .then(data => {
                     document.getElementById("footersec").innerHTML = data;
                 });
-                
+
             if (window.location.pathname === "/") {
                 window.location.href = "index.html";
             }

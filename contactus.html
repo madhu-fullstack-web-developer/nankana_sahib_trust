@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nankana Sahib Education Trust</title>
 </head>
+
 <body>
+    <!--header part-->
+    <div id="headersec"></div>
+    <!--footer part-->
+
+
+
+
+
+
+
     
+    <div id="footersec"></div>
+    <!--script part -->
+    <script>
+        // Function to Load Header
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("headersec").innerHTML = data;
+            });
+
+        // Function to Load Footer
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footersec").innerHTML = data;
+            });
+
+    </script>
+    <script src="https://kit.fontawesome.com/d51b33a391.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

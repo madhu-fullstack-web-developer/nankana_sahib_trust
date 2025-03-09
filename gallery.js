@@ -1,32 +1,26 @@
-/*	gallery */
-$(document).ready(function(){
+document.addEventListener("DOMContentLoaded", function () {
+    let filterButtons = document.querySelectorAll(".filter-button");
 
-    $(".filter-button").click(function(){
-        var value = $(this).attr('data-filter');
-        
-        if(value == "all")
-        {
-            $('.filter').show('1000');
-        }
-        else
-        {
-            $(".filter").not('.'+value).hide('3000');
-            $('.filter').filter('.'+value).show('3000');
-            
-        }
+    filterButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            let filterValue = this.getAttribute("data-filter");
+            let galleryItems = document.querySelectorAll(".gallery-prod");
 
-	        	if ($(".filter-button").removeClass("active")) {
-			$(this).removeClass("active");
-		    }
-		    	$(this).addClass("active");
-	    	});
-});
-/*	end gallery */
-
-$(document).ready(function(){
-    $(".lightbox").lightbox({
-        openEffect: "none",
-        closeEffect: "none"
+            if (filterValue === "all") {
+                // Show all items
+                galleryItems.forEach(item => {
+                    item.style.display = "block";
+                });
+            } else {
+                // Show only selected category, hide others
+                galleryItems.forEach(item => {
+                    if (item.classList.contains(filterValue)) {
+                        item.style.display = "block";
+                    } else {
+                        item.style.display = "none";
+                    }
+                });
+            }
+        });
     });
 });
-   

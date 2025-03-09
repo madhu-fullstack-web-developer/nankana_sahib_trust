@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nankana Sahib Education Trust</title>
+    <script src="gallery.js"></script>
+    <style>
+        #button:hover {
+        color: #ff8C00 !important;
+    }
+    .gallery-prod{
+        height: 300px;
+        overflow: hidden;
+    }
+
+    </style>
+</head>
+<body>
+    <!--header part-->
+    <div id="headersec"></div>
+    <!--gallery part-->
+    <div class="container-fluid" style="margin-top: 30px;">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-1"></div>
+            <div class="gallery col-10">
+                <p class="gallery-desc lead">Welcome to the NSET Gallery! Explore moments of academic excellence, cultural heritage, student achievements, and campus life through our vibrant collection.</p>
+            </div>
+            <div class="col-1"></div>            
+        </div> 
+          <div align="center" class="mt-4">
+            <button class="btn btn-default filter-button" data-filter="all" id="button">All</button>
+            <button class="btn btn-default filter-button" data-filter="campus" id="button">Campus Life & Infrastructure</button>
+            <button class="btn btn-default filter-button" data-filter="academic" id="button">Academic Events & Achievements</button>
+            <button class="btn btn-default filter-button" data-filter="cultural" id="button">Cultural & Festive Celebrations</button>
+            <button class="btn btn-default filter-button" data-filter="alumni" id="button">Alumni & Placement Highlights</button>
+        </div>
+        </div>
+    </div> 
+
+    <div class="container-fluid mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="gallery-prod col-sm-3 col-xs-6 filter campus">
+                    <a href="img/campus.jpg" class="lightbox">
+                    <img src="img/campus.jpg" alt="" class="img-responsive">
+                </a>
+                </div>
+                <div class="gallery-prod col-sm-3 col-xs-6 filter academic">
+                    <a href="img/seminar.jpeg" class="lightbox">
+                    <img src="img/seminar.jpeg" alt="" class="img-responsive">
+                </a>
+                </div>
+                <div class="gallery-prod col-sm-3 col-xs-6 filter cultural">
+                    <a href="img/celebrations.jpeg" class="lightbox">
+                    <img src="img/celebrations.jpeg" alt="" class="img-responsive">
+                </a>
+                </div>
+                <div class="gallery-prod col-sm-3 col-xs-6 filter alumni">
+                    <a href="img/alumni.jpeg" class="lightbox">
+                    <img src="img/alumni.jpeg" alt="" class="img-responsive">
+                </a>
+                </div>
+                <div class="row">
+                    <div class="gallery-prod col-sm-3 col-xs-6 filter campus">
+                        <a href="img/classrooms.jpeg" class="lightbox">
+                        <img src="img/classrooms.jpeg" alt="" class="img-responsive">
+                    </a>
+                    </div>
+                 </div>
+            <div class="gallery-prod col-sm-3 col-xs-6 filter academic">
+                <a href="img/seminar.jpeg" class="lightbox">
+                <img src="img/seminar.jpeg" alt="" class="img-responsive">
+            </a>
+            </div>
+        </div>
+       
+    </div>
+    <!--footer part-->
+    <div id="footersec"></div>
+    <!--script part -->
+    <script>
+        // Function to Load Header
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("headersec").innerHTML = data;
+            });
+        // Function to Load Footer
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footersec").innerHTML = data;
+            });
+        if (window.location.pathname === "/") {
+            window.location.href = "index.html";
+        }
+        
+    </script>
+   
+</body>
+</html>

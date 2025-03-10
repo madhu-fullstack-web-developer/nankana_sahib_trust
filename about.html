@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="counter.js"></script>
+<script src="https://kit.fontawesome.com/d51b33a391.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .hero-section {
+            background-color: #f5f5f5;
+            color:black;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero-section h1 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .about-section, .history-section, .vision-section, .mission-section {
+            padding: 60px 0;
+        }
+
+        .about-img {
+            width: 500px;
+            height: 500px;
+            border-radius: 10px;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+
+        .timeline::after {
+            content: "";
+            position: absolute;
+            width: 2px;
+            background-color:  #FF8C00;
+            top: 25px;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+        }
+
+        .timeline-item {
+            position: relative;
+            width: 50%;
+            padding: 20px 40px;
+            box-sizing: border-box;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+            text-align: right;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .timeline-item h4 {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .timeline-item p {
+            margin: 0;
+            color: #ffffff;
+        }
+
+        .text-box {
+            background: #003366;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+      
+    </style>
+</head>
+
+<body>
+
+    <!-- Include Header -->
+    <div id="header-container"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+    </script>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <h1>About Us</h1>
+        <p>Empowering education, fostering innovation, and shaping future leaders.</p>
+    </div>
+
+    <!-- About Section -->
+    <div class="container about-section">
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="img/director_of_trust.jpg" alt="About Us Image" class="about-img">
+
+                <h4 style="text-align: center; margin-top:25px;"><b>S. Iqbal Singh</b></h4>
+                <p style="text-align: center;">Director Trust Affairs<br>Nankana Sahib Education Trust</p>
+            </div>
+            <div class="col-lg-6">
+                <h2 style="color: #FF8C00;">Who We Are</h2>
+                <p style="text-align: justify;">Nankana Sahib Education Trust (NSET) was founded with the vision of providing quality education and advancing technological knowledge to empower future generations. Recognizing the need for a strong academic foundation, the trust has been instrumental in establishing institutions that uphold excellence in education and foster innovation.
+
+                    With a strong commitment to academic excellence, Guru Nanak Dev Engineering College (GNDEC) was established in 1956, emerging as a pioneer in technical education. Over the years, GNDEC has grown into a center of excellence, producing skilled professionals who contribute to industry, research, and societal progress. The institution continuously adapts to technological advancements, ensuring students receive hands-on experience, industry exposure, and a curriculum aligned with global trends.
+                    
+                    Understanding the importance of early education and overall personality development, NSET also established Nankana Sahib Public School (NSPS) to provide holistic school education to young minds. NSPS focuses on academic rigor, moral values, and extracurricular growth, preparing students to become well-rounded individuals ready to excel in their future endeavors.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- GNDEC History Section -->
+    <div class="container history-section" style="margin-top: -25px;">
+        <h2 class="text-center" style="color: #FF8C00;">Our Journey - GNDEC</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="text-box">
+                    <h4 style="color: #f8f9fa;">1953</h4>
+                    <p>Polytechnic was started to provide technical education.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="text-box">
+                    <h4 style="color: #f8f9fa;">1956</h4>
+                    <p>Guru Nanak Dev Engineering College (GNDEC) was established.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="text-box">
+                    <h4 style="color: #f8f9fa;">1960s-1980s</h4>
+                    <p>Expansion of academic programs and research facilities.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="text-box">
+                    <h4 style="color: #f8f9fa;">2004</h4>
+                    <p>Courses accredited by NBA, New Delhi.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="text-box">
+                    <h4 style="color: #f8f9fa;">2012</h4>
+                    <p>GNDEC granted Autonomous Status under UGC Act.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="text-box">
+                    <h4 style="color: #f8f9fa;">Present</h4>
+                    <p>ISO 9001-2008 certified, accredited with 'A' grade by NAAC.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NSPS History Section -->
+    <div class="container history-section">
+        <h2 class="text-center" style="color: #FF8C00;">Our Journey - Nankana Sahib Public School</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="text-box">
+                    <h4 style="color: #f8f9fa;">1991</h4>
+                    <p>Nankana Sahib Public School (NSPS) was established to provide quality school education.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="text-box">
+                    <h4 style="color: #f8f9fa;">2000</h4>
+                    <p>NSPS expanded its curriculum and modernized its facilities.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="text-box">
+                    <h4 style="color: #f8f9fa;">2010</h4>
+                    <p>NSPS introduced smart classrooms and digital learning initiatives.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="text-box">
+                    <h4 style="color: #f8f9fa;">2020</h4>
+                    <p>NSPS achieved top rankings for academic excellence and extracurricular programs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vision Section -->
+    <div class="container vision-section">
+                <h2 style="color: #FF8C00;">Our Vision</h2>
+                <p style="text-align: justify;">Our vision is to be a leading institution that nurtures talent, fosters innovation, and equips students with technical knowledge and skills to drive societal progress and economic development. We strive to create an environment where students are encouraged to explore their potential, engage in research, and develop creative solutions to real-world challenges. By integrating cutting-edge technology, industry partnerships, and a student-centric learning approach, we aim to cultivate leaders who not only excel in their fields but also contribute meaningfully to society.</p>
+            </div>
+
+    <!-- Mission Section -->
+    <div class="container mission-section" style="margin-top: -75px;">
+                <h2 style="color: #FF8C00;">Our Mission</h2>
+                <p style="text-align: justify;">Our institution is dedicated to the mission of Education for All, ensuring that quality education is accessible to every individual, regardless of background. We actively promote Fostering Innovation, encouraging students to think critically, explore new ideas, and develop groundbreaking technologies that shape the future. Through our commitment to Holistic Development, we provide students with opportunities for leadership growth and skill enhancement, preparing them to excel in all aspects of life. Additionally, we emphasize Uplifting Society by nurturing technically competent professionals who contribute to nation-building and drive positive change. Our strong focus on Industry Collaboration strengthens partnerships with industries and universities, ensuring that students are equipped with real-world knowledge and practical experience to thrive in their careers.</p>
+    </div>
+
+     <!-- Include Footer -->
+     <div id="footer-container"></div>
+     <script>
+         fetch('footer.html')
+             .then(response => response.text())
+             .then(data => {
+                 document.getElementById('footer-container').innerHTML = data;
+             });
+     </script>
+
+</body>
+
+</html>

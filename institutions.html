@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Institutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="counter.js"></script>
+<script src="https://kit.fontawesome.com/d51b33a391.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .institutions-section {
+            padding: 50px 0;
+        }
+
+        .institution-card {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .institution-card:hover {
+            transform: scale(1.05);
+        }
+
+        .institution-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .institution-content {
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .institution-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Include Header -->
+    <div id="header-container"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+    </script>
+
+    <!-- Institutions Section -->
+    <div class="container institutions-section">
+        <h2 class="text-center mb-5" style="color: #FF8C00;">Our Institutions</h2>
+        <div class="row">
+            <!-- Institution 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="institution-card">
+                    <img src="img/nankana_sahib_education_trust_guru nanak dev engineering college.jpg" alt="Institution 1" class="institution-img">
+                    <div class="institution-content">
+                        <h3 class="institution-title">Guru Nanak Dev Engineering College(GNDEC)</h3>
+                        <p style="text-align: justify;">Established in 1956, Guru Nanak Dev Engineering College (GNDEC) is a premier engineering institution in Northern India. ISO certified and NBA accredited, it holds autonomous status from UGC. GNDEC excels in technical education, research, and innovation, collaborating with IOWA University and receiving grants from TEQIP-II, DST, and AICTE.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Institution 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="institution-card">
+                    <img src="img/nankana_sahib_education_trust_guru nanak dev polytecnic college.jpg" alt="Institution 2" class="institution-img">
+                    <div class="institution-content">
+                        <h3 class="institution-title">Guru Nanak Dev Polytechnic College</h3>
+                        <p style="text-align: justify;">Founded in 1953, Guru Nanak Dev Polytechnic is the first institution under NSET. It offers diploma courses in Civil, Electrical, and Mechanical Engineering, emphasizing skill development and practical learning. With advanced workshops and labs, it empowers rural youth through hands-on training and industrial programs, bridging education with industry needs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Institution 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="institution-card">
+                    <img src="img/nankana_sahib_school_image.jpeg" alt="Institution 3" class="institution-img">
+                    <div class="institution-content">
+                        <h3 class="institution-title">Nankana Sahib Public School</h3>
+                        <p style="text-align: justify;">Established in 1978, Nankana Sahib Public School offers quality education following the CBSE curriculum. Spread over 15 acres, it serves 60 villages around Ludhiana. The school promotes holistic development through cultural, sports, and community programs. With expert teachers, it empowers students to excel in academics and co-curricular activities.</p>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Institution 4 -->
+             <div class="col-lg-4 col-md-6 mb-4">
+                <div class="institution-card">
+                    <img src="img/nankana_sahib_college_of_education.jpeg" alt="Institution 1" class="institution-img">
+                    <div class="institution-content">
+                        <h3 class="institution-title">Training College Kot Gangu Rai</h3>
+                        <p style="text-align: justify;">Training College Kot Gangu Rai offers diploma and degree programs in teacher education to develop skilled educators. It empowers women by enrolling many female candidates. Through workshops, seminars, and community outreach, the college strengthens rural education infrastructure, playing a vital role in uplifting society through quality teacher training programs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Institution 5 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="institution-card">
+                    <img src="img/community_development_and_training_centre.jpeg" alt="Institution 2" class="institution-img">
+                    <div class="institution-content">
+                        <h3 class="institution-title">Community Development & Training Centre</h3>
+                        <p style="text-align: justify;">Established in 1999, the Community Development & Training Centre empowers marginalized communities through vocational training in stitching, tailoring, and computer applications. It focuses on skill development for women and youth, enhancing employability and economic independence. The center plays a crucial role in uplifting rural communities through education and hands-on training.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Institution 6 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="institution-card">
+                    <img src="img/step.jpeg" alt="Institution 3" class="institution-img">
+                    <div class="institution-content">
+                        <h3 class="institution-title">Science & Technology Entrepreneur’s Park (STEP)</h3>
+                        <p style="text-align: justify;">STEP was established to foster Entrepreneurship, Innovation, and Research Projects. It provides Technical Infrastructure and Business Incubation to budding entrepreneurs. The park encourages Startups in Technology and Agriculture sectors. STEP plays a pivotal role in promoting Innovation and Self-Employment among students and the rural population.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Footer -->
+    <div id="footer-container"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+   
+</body>
+
+</html>

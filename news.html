@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nankana Sahib Education Trust</title>
+</head>
+
+<body>
+    <!--header part-->
+    <div id="headersec"></div>
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-1">Latest News</h2>
+        <p class="text-center mb-5">Stay informed about the latest developments, achievements, and important updates
+            from NSET institutions.</p>
+        <div class="row gy-4">
+            <div class="col-md-4">
+                <div class="card news-card">
+                    <img src="news1.jpg" class="card-img-top" alt="News 1">
+                    <div class="card-body">
+                        <h5 class="card-title">GNDEC Hosts International Research Conference 2025</h5>
+                        <p class="card-text">Guru Nanak Dev Engineering College (GNDEC) successfully hosted the
+                            International Conference on Emerging Technologies in Engineering and Science (ICETES-2025),
+                            featuring keynote speakers from leading universities worldwide....</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card news-card">
+                    <img src="news2.jpg" class="card-img-top" alt="News 2">
+                    <div class="card-body">
+                        <h5 class="card-title"> NSET Recognized for Excellence in Technical Education</h5>
+                        <p class="card-text">Nankana Sahib Education Trust has been honored with the ‘Best Technical
+                            Education Provider’ award by the Punjab Technical Council for its contribution to skill
+                            development and research.</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card news-card">
+                    <img src="news3.jpg" class="card-img-top" alt="News 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Science & Technology Park Launches New Innovation Lab</h5>
+                        <p class="card-text"> The Science & Technology Entrepreneur’s Park at GNDEC has launched a
+                            state-of-the-art Innovation Lab to support student startups and research projects.</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card news-card">
+                    <img src="news3.jpg" class="card-img-top" alt="News 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Scholarship Announcement for Meritorious Rural Students</h5>
+                        <p class="card-text"> NSET is proud to announce scholarships for deserving students from rural
+                            backgrounds to encourage academic excellence.</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 mb-5">
+        <h2 class="text-center mb-1">Upcoming Events</h2>
+        <p class="text-center mb-5">Join us for various educational, cultural, and professional development events
+            happening at NSET institutions.</p>
+        <div class="row gy-4">
+            <div class="col-md-6">
+                <div class="card event-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Annual Cultural Fest - "Virasat 2025"</h5>
+                        <p class="card-text"><strong>Date:</strong> March 20, 2025</p>
+                        <p class="card-text">A celebration of culture, music, and talent featuring performances,
+                            competitions, and guest artists.</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card event-card">
+                    <div class="card-body">
+                        <h5 class="card-title">NSET Alumni Meet 2025</h5>
+                        <p class="card-text"><strong>Date:</strong> April 10, 2025</p>
+                        <p class="card-text">Reconnect with old classmates and network with alumni making a mark in
+                            various industries.</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card event-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Placement Drive 2025</h5>
+                        <p class="card-text"><strong>Date:</strong> April 10, 2025</p>
+                        <p class="card-text"> Leading companies from IT, manufacturing, and engineering sectors will
+                            visit for campus recruitment.</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card event-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Workshop on Artificial Intelligence & IoT</h5>
+                        <p class="card-text"><strong>Date:</strong> April 10, 2025</p>
+                        <p class="card-text">A hands-on training program for students and faculty on AI applications in
+                            real-world industries.</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--footer part-->
+    <div id="footersec"></div>
+    <!--script part -->
+
+    <script>
+        // Function to Load Header
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("headersec").innerHTML = data;
+            });
+        // Function to Load Footer
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footersec").innerHTML = data;
+            });
+        if (window.location.pathname === "/") {
+            window.location.href = "index.html";
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/d51b33a391.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

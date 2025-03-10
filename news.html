@@ -9,6 +9,12 @@
     #button:hover {
         color: #ff8C00 !important;
     }
+    @media (max-width:770px) {
+            h2 {
+                padding-bottom: 8px;
+                border-bottom: 1px solid #dedddc;
+            }
+        }
     </style>
 </head>
 
@@ -17,7 +23,17 @@
     <div id="headersec"></div>
 
     <div class="container mt-5">
-        <h2 class="text-center mb-1">Latest News</h2>
+        <div class="row ">
+            <div class="d-none d-md-block col-md-5">
+                <hr>
+            </div>
+            <div class="col-12 col-md-2">
+                <h2 class=" text-sm-start text-md-center" style="color: #ff8C00;">Latest News</h2>
+            </div>
+            <div class="d-none d-md-block col-md-5">
+                <hr>
+            </div>
+        </div>
         <p class="text-center mb-5">Stay informed about the latest developments, achievements, and important updates
             from NSET institutions.</p>
         <div class="row gy-4">
@@ -71,8 +87,17 @@
     </div>
 
     <div class="container mt-5 mb-5">
-        <h2 class="text-center mb-1">Upcoming Events</h2>
-        <p class="text-center mb-5">Join us for various educational, cultural, and professional development events
+        <div class="row ">
+            <div class="d-none d-md-block col-md-4">
+                <hr>
+            </div>
+            <div class="col-12 col-md-4">
+                <h2 class=" text-sm-start text-md-center" style="color: #ff8C00;">Upcomming Events</h2>
+            </div>
+            <div class="d-none d-md-block col-md-4">
+                <hr>
+            </div>
+        </div>        <p class="text-center mb-5">Join us for various educational, cultural, and professional development events
             happening at NSET institutions.</p>
         <div class="row gy-4">
             <div class="col-md-6">

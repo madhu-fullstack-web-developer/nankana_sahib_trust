@@ -4,8 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
+    <style>
+        .intro{
+            height: 200px;
+            background-color: #f5f5f5;
+            
+        }
+        @media (max-width:770px) {
+            h2 {
+                padding-bottom: 8px;
+                border-bottom: 1px solid #dedddc;
+            }
+        }
+    </style>
 </head>
 <body>
+ <!--header part-->
+ <div id="headersec"></div>
+    <div class="intro container-fluid" >
+        <div class="container">
+          <div class="row">
+            <h3 class="text-center" style="margin-top: 90px;">Projects of Nankana Sahib Education Trust (NSET)</h3>
+
+          </div>
+
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color:rgba(244, 240, 240, 0.2);">
+      <div class="container mt-5">
+        <div class="row ">
+            <div class="d-none d-md-block col-md-5">
+                <hr>
+            </div>
+            <div class="col-12 col-md-2">
+                <h2 class=" text-sm-start text-md-center" style="color: #ff8C00;">Introduction</h2>
+            </div>
+            <div class="d-none d-md-block col-md-5">
+                <hr>
+            </div>
+        </div>
+        <div class="row ">
+                <p class="mt-3" style="text-align: justify;">Nankana Sahib Education Trust (NSET) has been at the forefront of academic excellence, research, and community development. Over the years, the trust has undertaken several projects aimed at fostering technological advancements, skill development, and social upliftment. These projects cater to students, researchers, and the wider community, contributing to the mission of "Removal of Economic Backwardness through Technology.</p> 
+            </div>
+    </div>
+    </div>
     
+    <div class="container-fluid" style="background-color:rgba(244, 240, 240, 0.2);">
+        <div class="container px-4 py-5" id="featured-3">
+            <div class="row ">
+                <div class="d-none d-md-block col-md-4">
+                    <hr>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h2 class=" text-sm-start text-md-center" style="color: #ff8C00;">Our key Projects</h2>
+                </div>
+                <div class="d-none d-md-block col-md-4">
+                    <hr>
+                </div>
+            </div>
+
+
+
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+              <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                    <i class="fa-solid fa-graduation-cap"></i>                </div>
+                <h3 class="fs-2 text-body-emphasis">Technical Education Quality Improvement Programme-II (TEQIP-II)</h3>
+                <p>TEQIP-II was sanctioned by the Ministry of Human Resource Development (MHRD), Government of India, with funding of ₹10 Crores. It aimed at improving learning outcomes, faculty development, and research facilities.</p>
+                <a href="#" class="icon-link">
+                  Call to action
+                  <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                </a>
+              </div>
+              <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                  <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Research Projects</h3>
+                <p>NSET institutions, particularly Guru Nanak Dev Engineering College (GNDEC), have secured multiple research grants from agencies like AICTE, UGC, DST to promote applied research.</p>
+                <a href="#" class="icon-link">
+                  Call to action
+                  <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                </a>
+              </div>
+              <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                    <i class="fa-solid fa-users"></i>                
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Community Development Programs</h3>
+                <p>The Community Development & Training Centre under NSET runs various programs to equip youth and women with essential skills such as computer literacy, entrepreneurship, and technical trades.</p>
+                <a href="#" class="icon-link">
+                  Call to action
+                  <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                </a>
+              </div>
+              <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                    <i class="fa-solid fa-tower-broadcast"></i></div>
+                <h3 class="fs-2 text-body-emphasis"> FM Radio Station for Education & Awareness</h3>
+                <p>TEQIP-II was sanctioned by the Ministry of Human Resource Development (MHRD), Government of India, with funding of ₹10 Crores. It aimed at improving learning outcomes, faculty development, and research facilities.</p>
+                <a href="#" class="icon-link">
+                  Call to action
+                  <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                </a>
+              </div>
+              <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                    <i class="fa-solid fa-lightbulb"></i></div>
+                <h3 class="fs-2 text-body-emphasis"> Skill Development & Entrepreneurship Initiatives</h3>
+                <p>Under its Science & Technology Entrepreneur’s Park (STEP), NSET conducts workshops, incubation programs, and startup mentorship sessions for aspiring entrepreneurs.</p>
+                  <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+    </div>
+ 
+ <!--footer part-->
+ <div id="footersec"></div>
+
+ <!--script part -->
+ <script>
+     // Function to Load Header
+     fetch("header.html")
+         .then(response => response.text())
+         .then(data => {
+             document.getElementById("headersec").innerHTML = data;
+         });
+
+     // Function to Load Footer
+     fetch("footer.html")
+         .then(response => response.text())
+         .then(data => {
+             document.getElementById("footersec").innerHTML = data;
+         });
+
+     if (window.location.pathname === "/") {
+         window.location.href = "index.html";
+     }
+     
+ </script> 
+        <script src="https://kit.fontawesome.com/d51b33a391.js" crossorigin="anonymous"></script>
+
 </body>
 </html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guru Nanak Dev Engineering College</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="counter.js"></script>
+<script src="https://kit.fontawesome.com/d51b33a391.js" crossorigin="anonymous"></script>
+    <style>
+        body { background-color: #f8f9fa; }
+        .hero-section {
+            background-color: #f8f9fa;;
+            color:black;
+            text-align: center;
+            padding: 100px 20px;
+            position: relative;
+        }
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: #f8f9fa;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .section { padding: 60px 0; }
+        .section-title { text-align: center; color: #FF8C00; margin-bottom: 40px; }
+        .card:hover { transform: scale(1.05); transition: 0.3s; }
+    </style>
+</head>
+<body>
+     <!-- Include Header -->
+     <div id="header-container"></div>
+     <script>
+         fetch('header.html')
+             .then(response => response.text())
+             .then(data => {
+                 document.getElementById('header-container').innerHTML = data;
+             });
+     </script>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Guru Nanak Dev Engineering College</h1>
+            <p>Excellence in Technical Education Since 1956</p>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="container section">
+        <h2 class="section-title">About GNDEC</h2>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <p style="text-align: justify;">Guru Nanak Dev Engineering College (GNDEC), established in 1956, is a premier engineering institution in Northern India. It is ISO certified, NBA accredited, and holds autonomous status from UGC, ensuring high academic standards. GNDEC is committed to technical education, research, and innovation, offering a diverse range of undergraduate, postgraduate, and doctoral programs. The college collaborates with leading industries and international universities, fostering global exposure and practical learning. With state-of-the-art laboratories, modern infrastructure, and experienced faculty, GNDEC empowers students with the skills needed to excel in engineering, entrepreneurship, and leadership, making a significant impact on society and industry.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="img/nankana_sahib_education_trust_guru nanak dev engineering college.jpg" class="img-fluid rounded shadow-lg" alt="About GNDEC">
+            </div>
+        </div>
+    </div>
+
+    <!-- Courses Section -->
+    <div class="container section">
+        <h2 class="section-title">Our Courses</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/course_cse.jpg" class="card-img-top" alt="CSE">
+                    <div class="card-body">
+                        <h5 class="card-title">Computer Science Engineering</h5>
+                        <p>Learn AI, data science, and software development.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/course_mech.jpg" class="card-img-top" alt="ME">
+                    <div class="card-body">
+                        <h5 class="card-title">Mechanical Engineering</h5>
+                        <p>Explore robotics, automation, and manufacturing technologies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/course_civil.jpg" class="card-img-top" alt="CE">
+                    <div class="card-body">
+                        <h5 class="card-title">Civil Engineering</h5>
+                        <p>Design and construct smart, sustainable infrastructure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Facilities Section -->
+    <div class="container section">
+        <h2 class="section-title">Campus Facilities</h2>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="img/library.jpg" class="img-fluid rounded shadow-lg" alt="Library">
+            </div>
+            <div class="col-md-6">
+                <p>GNDEC offers modern research labs, a digital library, high-tech classrooms, and a dedicated sports complex, fostering academic and extracurricular excellence.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container section text-center">
+        <h2 class="section-title">Contact Us</h2>
+        <p>Email: contact@gndec.ac.in | Phone: +91 98765 43210</p>
+        <p>Address: Gill Park, Ludhiana, Punjab, India</p>
+    </div>
+
+    <!-- Include Footer -->
+    <div id="footer-container"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+</body>
+</html>

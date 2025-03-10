@@ -129,10 +129,8 @@
             /* Small Size Button */
 
         }
-
         #button:hover {
-            color: #ff8C00;
-            background-color: white;
+            color: #ff8C00 !important;
         }
 
         p {
@@ -190,19 +188,21 @@
         .text-orange {
             color: #ff8C00;
         }
-       .carousel-control-prev-icon, .carousel-control-next-icon {
-        filter: invert(41%);            
-              
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            filter: invert(41%);
+
         }
     </style>
 </head>
 
 <body>
-
+    <!--header part-->
     <div id="headersec"></div>
 
     <!--hero section-->
-    <div class="hero-section m-auto">
+    <div class="hero-section m-auto" id="herosection">
         <div class="hero-overlay">
             <div class="container d-flex align-items-center justify-content-cente text-start">
                 <div class="row">
@@ -497,10 +497,9 @@
                     </div>
                 </div>
             </section>
-
         </div>
         <!--testimonials-->
-        <div class="container-fluid" style="margin-top: 80px;">
+        <div class="container-fluid" style="margin-top: 80px; margin-bottom: 60px;">
             <div class="container">
                 <div class="row ">
                     <div class="d-none d-md-block col-md-4">
@@ -518,29 +517,50 @@
                         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active" data-bs-interval="10000">
-                                    <p class="lead italic mx-4 mx-md-5 text-center mb-5">"NSET has transformed my life. The quality education and supportive faculty
+                                    <p class="lead italic mx-4 mx-md-5 text-center mb-5">"NSET has transformed my life.
+                                        The quality education and supportive faculty
                                         helped me build a strong career in the IT field. I am proud to be a part of this
                                         institution."
                                     </p>
-                                    <img src="img/harpreet kaur.jpeg" class="rounded-circle img-fluid shadow-1-strong" alt="..." width="100">
-                                    <p class="text-muted text-center mt-2">Harpreet Kaur</p>
+                                    <img src="img/harpreet kaur.jpeg" class="rounded-circle img-fluid shadow-1-strong"
+                                        alt="..." width="100">
+                                    <p class="text-muted text-center mt-2 mb-1">Harpreet Kaur</p>
+                                    <i class="fa-solid fa-star" style="color: #ff8C00;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8C00;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8C00;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8C00;"></i>
+                                    <i class="fa-solid fa-star-half-stroke" style="color: #ff8C00;"></i>
                                 </div>
                                 <div class="carousel-item" data-bs-interval="2000">
-                                    <p class="lead italic mx-4 mx-md-5 text-center mb-5">"The hands-on practical training and placement support at GNDP helped me secure a
+                                    <p class="lead italic mx-4 mx-md-5 text-center mb-5">"The hands-on practical
+                                        training and placement support at GNDP helped me secure a
                                         job at a reputed company. Thank you NSET for shaping my future!"</p>
-                                    <img src="img/arjun singh.jpeg" class="rounded-circle img-fluid shadow-1-strong" alt="..." width="100">
-                                    <p class="text-muted text-center mt-2">Arjun Singh</p>
+                                    <img src="img/arjun singh.jpeg" class="rounded-circle img-fluid shadow-1-strong"
+                                        alt="..." width="100">
+                                    <p class="text-muted text-center mt-2 mb-1">Arjun Singh</p>
+                                    <i class="fa-solid fa-star" style="color: #ff8C00;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8C00;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8C00;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8C00;"></i>
+                                    <i class="fa-solid fa-star-half-stroke" style="color: #ff8C00;"></i>
                                 </div>
                                 <div class="carousel-item">
-                                   <p class="lead italic mx-4 mx-md-5 text-center mb-5">"The school environment and faculty always encourage us to
-                                    dream big. The education I received at NSPS made me confident to pursue higher
-                                    studies."</p>
-                                    <img src="img/simranjeet kaur.jpeg" class="rounded-circle img-fluid shadow-1-strong" alt="..." width="100">
-                                    <p class="text-muted text-center mt-2">Simranjeet Kaur</p>
+                                    <p class="lead italic mx-4 mx-md-5 text-center mb-5">"The school environment and
+                                        faculty always encourage us to
+                                        dream big. The education I received at NSPS made me confident to pursue higher
+                                        studies."</p>
+                                    <img src="img/simranjeet kaur.jpeg" class="rounded-circle img-fluid shadow-1-strong"
+                                        alt="..." width="100">
+                                    <p class="text-muted text-center mt-2 mb-1">Simranjeet Kaur</p>
+                                    <i class="fa-solid fa-star" style="color: #ff8C00;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8C00;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8C00;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8C00;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ff8C00;"></i>
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselExampleInterval" data-bs-slide="prev" >
+                                data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
@@ -554,9 +574,10 @@
                 </div>
             </div>
         </div>
-
+        <!--footer part-->
         <div id="footersec"></div>
 
+        <!--script part -->
         <script>
             // Function to Load Header
             fetch("header.html")
@@ -572,9 +593,10 @@
                     document.getElementById("footersec").innerHTML = data;
                 });
 
+            if (window.location.pathname === "/") {
+                window.location.href = "index.html";
+            }
         </script>
-
-
         <script src="https://kit.fontawesome.com/d51b33a391.js" crossorigin="anonymous"></script>
 </body>
 

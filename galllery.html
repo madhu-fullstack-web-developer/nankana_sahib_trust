@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nankana Sahib Education Trust</title>
+    <script src="gallery.js"></script>
+    <style>
+        body {
+            font-size: 17px;
+        }
+
+        #button:hover {
+            color: #ff8C00 !important;
+        }
+
+        .gallery-prod {
+            height: 300px;
+        }
+
+        .gallery-prod img {
+            height: 100%;
+            overflow: hidden;
+            object-fit: contain;
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!--header part-->
+    <div id="headersec"></div>
+    <!--gallery part-->
+    <div class="container-fluid" style="margin-top: 30px;">
+        <div class="container">
+            <div class="row">
+                <div class="gallery">
+                    <h3 class="gallery-desc text-center">Welcome to the NSET Gallery</h3>
+                </div>
+            </div> 
+        </div>
+        </div>
+            <div class="container-fluid">
+                           <div class="container text-center mt-4 mb-4">
+                <div class="row">
+                    <div class="col-12 col-md-auto mb-2">
+                        <button class="btn btn-default filter-button w-100" data-filter="all" id="button">All</button>
+                    </div>
+                    <div class="col-12 col-md-auto mb-2">
+                        <button class="btn btn-default filter-button w-100" data-filter="campus" id="button">Campus Life & Infrastructure</button>
+                    </div>
+                    <div class="col-12 col-md-auto mb-2">
+                        <button class="btn btn-default filter-button w-100" data-filter="academic" id="button">Academic Events & Achievements</button>
+                    </div>
+                    <div class="col-12 col-md-auto mb-2">
+                        <button class="btn btn-default filter-button w-100" data-filter="cultural" id="button">Cultural & Festive Celebrations</button>
+                    </div>
+                    <div class="col-12 col-md-auto mb-2">
+                        <button class="btn btn-default filter-button w-100" data-filter="alumni" id="button">Alumni & Placement Highlights</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+ 
+            
+   
+
+    <div class="container-fluid mt-5">
+        <div class="container mb-4">
+            <div class="row gy-3 gx-3">
+                <div class="gallery-prod col-sm-12 col-md-3 filter campus">
+                    <a href="img/campus.jpg" class="lightbox">
+                        <img src="img/campus.jpg" alt="" class="img-responsive">
+                    </a>
+                </div>
+                <div class="gallery-prod col-sm-12 col-md-3 filter academic">
+                    <a href="img/seminar.jpeg" class="lightbox">
+                        <img src="img/seminar.jpeg" alt="" class="img-responsive">
+                    </a>
+                </div>
+                <div class="gallery-prod col-sm-12 col-md-3 filter cultural">
+                    <a href="img/celebrations.jpeg" class="lightbox">
+                        <img src="img/celebrations.jpeg" alt="" class="img-responsive">
+                    </a>
+                </div>
+                <div class="gallery-prod col-sm-12 col-md-3 filter alumni">
+                    <a href="img/alumni.jpeg" class="lightbox">
+                        <img src="img/alumni.jpeg" alt="" class="img-responsive">
+                    </a>
+                </div>
+                <div class="gallery-prod col-sm-12 col-md-3 filter campus">
+                    <a href="img/classrooms.jpeg" class="lightbox">
+                        <img src="img/classrooms.jpeg" alt="" class="img-responsive">
+                    </a>
+                </div>
+                <div class="gallery-prod col-sm-12 col-md-3 filter academic">
+                    <a href="img/workshops.jpeg" class="lightbox">
+                        <img src="img/workshops.jpeg" alt="" class="img-responsive">
+                    </a>
+                </div>
+                <div class="gallery-prod col-sm-12 col-md-3 filter cultural">
+                    <a href="img/sports meet.jpeg" class="lightbox">
+                        <img src="img/sports meet.jpeg" alt="" class="img-responsive">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <!--footer part-->
+        <div id="footersec"></div>
+
+        <!--script part -->
+        <script>
+            // Function to Load Header
+            fetch("header.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("headersec").innerHTML = data;
+                });
+
+            // Function to Load Footer
+            fetch("footer.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("footersec").innerHTML = data;
+                });
+
+            if (window.location.pathname === "/") {
+                window.location.href = "index.html";
+            }
+        </script>
+        <script src="https://kit.fontawesome.com/d51b33a391.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

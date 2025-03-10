@@ -48,19 +48,15 @@
             font-weight: bold;
             margin-bottom: 10px;
         }
+        #button:hover{
+            color: #FF8C00;
+        }
     </style>
 </head>
 
 <body>
     <!-- Include Header -->
     <div id="header-container"></div>
-    <script>
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-container').innerHTML = data;
-            });
-    </script>
 
     <!-- Institutions Section -->
     <div class="container institutions-section">
@@ -73,6 +69,7 @@
                     <div class="institution-content">
                         <h3 class="institution-title">Guru Nanak Dev Engineering College(GNDEC)</h3>
                         <p style="text-align: justify;">Established in 1956, Guru Nanak Dev Engineering College (GNDEC) is a premier engineering institution in Northern India. ISO certified and NBA accredited, it holds autonomous status from UGC. GNDEC excels in technical education, research, and innovation, collaborating with IOWA University and receiving grants from TEQIP-II, DST, and AICTE.</p>
+                        <a href="gndec.html" class="btn" id="button">Read More</a>
                     </div>
                 </div>
             </div>
@@ -84,6 +81,8 @@
                     <div class="institution-content">
                         <h3 class="institution-title">Guru Nanak Dev Polytechnic College</h3>
                         <p style="text-align: justify;">Founded in 1953, Guru Nanak Dev Polytechnic is the first institution under NSET. It offers diploma courses in Civil, Electrical, and Mechanical Engineering, emphasizing skill development and practical learning. With advanced workshops and labs, it empowers rural youth through hands-on training and industrial programs, bridging education with industry needs.</p>
+                        <a href="gndpc.html" class="btn" id="button">Read More</a>
+
                     </div>
                 </div>
             </div>
@@ -95,6 +94,8 @@
                     <div class="institution-content">
                         <h3 class="institution-title">Nankana Sahib Public School</h3>
                         <p style="text-align: justify;">Established in 1978, Nankana Sahib Public School offers quality education following the CBSE curriculum. Spread over 15 acres, it serves 60 villages around Ludhiana. The school promotes holistic development through cultural, sports, and community programs. With expert teachers, it empowers students to excel in academics and co-curricular activities.</p>
+                        <a href="nankana_sahib_public_school.html" class="btn" id="button">Read More</a>
+
                     </div>
                 </div>
             </div>
@@ -106,6 +107,8 @@
                     <div class="institution-content">
                         <h3 class="institution-title">Training College Kot Gangu Rai</h3>
                         <p style="text-align: justify;">Training College Kot Gangu Rai offers diploma and degree programs in teacher education to develop skilled educators. It empowers women by enrolling many female candidates. Through workshops, seminars, and community outreach, the college strengthens rural education infrastructure, playing a vital role in uplifting society through quality teacher training programs.</p>
+                        <a href="#" class="btn" id="button">Read More</a>
+
                     </div>
                 </div>
             </div>
@@ -117,6 +120,8 @@
                     <div class="institution-content">
                         <h3 class="institution-title">Community Development & Training Centre</h3>
                         <p style="text-align: justify;">Established in 1999, the Community Development & Training Centre empowers marginalized communities through vocational training in stitching, tailoring, and computer applications. It focuses on skill development for women and youth, enhancing employability and economic independence. The center plays a crucial role in uplifting rural communities through education and hands-on training.</p>
+                        <a href="#" class="btn" id="button">Read More</a>
+
                     </div>
                 </div>
             </div>
@@ -128,6 +133,8 @@
                     <div class="institution-content">
                         <h3 class="institution-title">Science & Technology Entrepreneur’s Park (STEP)</h3>
                         <p style="text-align: justify;">STEP was established to foster Entrepreneurship, Innovation, and Research Projects. It provides Technical Infrastructure and Business Incubation to budding entrepreneurs. The park encourages Startups in Technology and Agriculture sectors. STEP plays a pivotal role in promoting Innovation and Self-Employment among students and the rural population.</p>
+                        <a href="#" class="btn" id="button">Read More</a>
+
                     </div>
                 </div>
             </div>
@@ -137,6 +144,11 @@
     <!-- Include Footer -->
     <div id="footer-container"></div>
     <script>
+          fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
         fetch('footer.html')
             .then(response => response.text())
             .then(data => {

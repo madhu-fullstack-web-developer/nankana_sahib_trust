@@ -25,6 +25,12 @@
             object-fit: contain;
 
         }
+        @media (max-width:770px) {
+            h2 {
+                padding-bottom: 8px;
+                border-bottom: 1px solid #dedddc;
+            }
+        }
         
     </style>
 </head>
@@ -35,11 +41,17 @@
     <!--gallery part-->
     <div class="container-fluid" style="margin-top: 30px;">
         <div class="container">
-            <div class="row">
-                <div class="gallery">
-                    <h3 class="gallery-desc text-center">Welcome to the NSET Gallery</h3>
+            <div class="row ">
+                <div class="d-none d-md-block col-md-3">
+                    <hr>
                 </div>
-            </div> 
+                <div class="col-12 col-md-6">
+                    <h2 class=" text-sm-start text-md-center" style="color: #ff8C00;">Welcome to the NSET Gallery</h2>
+                </div>
+                <div class="d-none d-md-block col-md-3">
+                    <hr>
+                </div>
+            </div>
         </div>
         </div>
             <div class="container-fluid">

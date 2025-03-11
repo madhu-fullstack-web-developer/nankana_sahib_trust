@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   counters.forEach((counter) => {
       let target = parseInt(counter.getAttribute("data-count"));
-      let speed = target / 600;
+      let speed = target / 200;
 
       function startCounting() {
           let count = 0;
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
                   clearInterval(updateCounter);
 
                   // Restart the counter after a short delay
-                  setTimeout(startCounting, 1000); // Restart after 1 second
+                  setTimeout(startCounting, 3000); // Restart after 1 second
               }
           }, 20);
       }
